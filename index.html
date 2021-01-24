@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Az első weboldalam</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="assets/logo.svg">
+</head>
+
+<body>
+
+    <font style="color: aliceblue;">
+
+        <!--BACKGROUND START-->
+
+        <style>
+            body {
+                background-image: url(/Users/gadav/Desktop/website/assets/bcgpic2.jpg);
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: 100% 100%;
+            }
+        </style>
+
+        <!--BACKGROUND END-->
+
+        <font face="Times New Roman ">
+            <font color="#000080 ">
+                <center>
+                    <h2>Üdvözöllek az oldalon!</h2>
+                </center>
+            </font>
+
+            <center>
+
+                <p><b>Dátum:</b> <span id="datetime"></span></p>
+
+                <script>
+                    var dt = new Date();
+                    document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
+                </script>
+
+            </center>
+
+            <center>
+
+                <p>
+                    <u><b>További oldalak:</b></u>
+                </p>
+
+                <!--MENU START-->
+
+                <form method="get" action="radio.html">
+                    <button type="submit">Rádió</button>
+                </form>
+
+                <!--form method="get" action="music.html">
+                    <button type="submit">Zenék</button>
+                </form-->
+
+                <form method="get" action="film.html">
+                    <button type="submit">Filmek</button>
+                </form>
+
+                <!--a href="radio.html" target="_new"><img src="/Users/gadav/Desktop/website/assets/radio.jpg" width="120" height="100"></img>
+                </a>
+                <br>
+                <a href="film.html" target="_new">Filmek</a-->
+
+                <!--MENU END-->
+
+            </center>
+
+            <br>
+            <br>
+
+            <!--IDOKEP START-->
+
+            <center>
+                <iframe src='https://beepulo.idokep.hu/futar/Szombathely' scrolling='no' style='width:300px;height:260px;border:none;'></iframe>
+            </center>
+
+            <!--IDOKEP END-->
+
+            <br>
+            <br>
+
+            <!--CONTENT START-->
+
+            <h3>
+                Először is beszéljünk az IP címről.
+            </h3>
+
+            <font face=Times New Roman>
+                <font style="font-size:16px; ">
+
+                    <p>
+                        Az IP-cím (Internet Protocol-cím) egy egyedi hálózati azonosító, amelyet az internetprotokoll segítségével kommunikáló számítógépek egymás azonosítására használnak. Minden, az internetre kapcsolt számítógépnek van IP-címe, de egy-egy konkrét cím nem kötődik
+                        feltétlenül egy-egy géphez: egyes gépeknek több címük is lehet (ilyenkor a különböző címek rendszerint a számítógép különböző hálózati eszközeit azonosítják), vagy több gép osztozhat egy címen (például NAT vagy proxy használata
+                        esetén), vagy a gép IP-címe rendszeresen változhat (ez különösen a lakossági internetszolgáltatón keresztül kapcsolódó otthoni számítógépekre jellemző). IPv4 szerinti IP-címek 32 bites egész számok, amelyeket hagyományosan négy
+                        darab egy bájtos, azaz 0 és 255 közé eső, ponttal elválasztott decimális számmal írunk le a könnyebb olvashatóság kedvéért. (Pl. 172.16.254.1) Az IPv6 szabvány jelentősen kiterjesztette a címteret, mert a 32 bit, ami a hetvenes
+                        években bőségesen elegendőnek tűnt a jellemzően tudományos és kutatói hálózat számára, az internet robbanásszerű vállalati és lakossági elterjedése nyomán kevésnek bizonyult. Az IPv6-os címek 128 bitesek, és már nem lenne praktikus
+                        decimálisan jelölni őket, ezért kompaktabb, hexadecimális számokkal írjuk le, 16 bites csoportosításban. (Pl. 2001:610:240:11:0:0:C100:1319) Az internetet használó számítógépek minden tranzakció során (például egy weboldal megjelenítésekor)
+                        megadják IP-címüket, ami révén elvileg be lehet azonosítani az adott gép helyét és tulajdonosát, illetve egy adott géppel végzett tevékenységekről sok információt lehet gyűjteni. A gyakorlatban a számítógépek jelentős része az
+                        internetszolgáltatójától rendszeresen új IP-címet kap, így azonosítása csak a szolgáltató együttműködésével lehetséges, aki csak rendőri megkeresésre és más jól meghatározott esetekben adhatja ki az információkat. Ezzel együtt
+                        az IP-cím számos országban, többek között Magyarországon is személyes adatnak számít.
+
+                    </p>
+
+                    <br>
+                    <br>
+
+                    <h4>IPv4 privát címtartományok.</h4>
+
+
+                    <p>
+                        Azoknak a számítógépeknek, amelyek nincsenek direkt módon az internetre kapcsolva, például belső hálózatra kapcsolt vállalati gépek, nem szükséges globálisan egyedi IP-címmel rendelkezniük. Ezeknek a gépeknek három IPv4 címtartomány van fenntartva az
+                        RFC 1918 szerint. Ezek a címek nem routolódnak az interneten, és nem lehet őket regisztrálni sem. A privát IP-címeket tehát egyszerre számos gép használhatja a saját hálózatában anélkül, hogy ez konfliktushoz vezetne.
+                    </p>
+
+                    <table>
+                        <tbody>
+                            <tr style="height: 22px; ">
+                                <th style="height: 22px; text-align: center; ">Priv&aacute;t IP-c&iacute;mtartom&aacute;nyok&nbsp;</th>
+                                <td style="height: 22px; text-align: center; "><b>&nbsp;Tartom&aacute;ny kezdete</b></td>
+                                <td style="height: 22px; text-align: center; "><b>Tartom&aacute;ny v&eacute;ge&nbsp;</b></td>
+                                <td style="height: 22px; text-align: center; "><b>&nbsp;C&iacute;mek sz&aacute;ma</b></td>
+                            </tr>
+                            <tr style="height: 22.8px; ">
+                                <td style="height: 22.8px; text-align: center; ">&nbsp;<b>24 bites t&ouml;mb (/8 prefix)</b></td>
+                                <td style="height: 22.8px; text-align: center; ">&nbsp;10.0.0.0</td>
+                                <td style="height: 22.8px; text-align: center; ">&nbsp;10.255.255.255</td>
+                                <td style="height: 22.8px; text-align: center; ">&nbsp;16 777 216</td>
+                            </tr>
+                            <tr style="height: 22px; ">
+                                <td style="height: 22px; text-align: center; "><b>&nbsp;20 bites t&ouml;mb (/12 prefix)</b></td>
+                                <td style="height: 22px; text-align: center; ">&nbsp;172.16.0.0</td>
+                                <td style="height: 22px; text-align: center; ">&nbsp;172.31.255.255</td>
+                                <td style="height: 22px; text-align: center; ">&nbsp;1 048 576</td>
+                            </tr>
+                            <tr style="height: 22px; ">
+                                <td style="height: 22px; text-align: center; "><b>&nbsp;16 bites t&ouml;mb (/16 prefix)</b></td>
+                                <td style="height: 22px; text-align: center; ">&nbsp;192.168.0.0</td>
+                                <td style="height: 22px; text-align: center; ">&nbsp;192.168.255.255</td>
+                                <td style="height: 22px; text-align: center; ">&nbsp;65 536</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <p>
+                        Számos program és protokoll létezik, amelynek célja az IP-cím elrejtése; ezek rendszerint köztes gépeken irányítják át a forgalmat. Ilyen például a Tor, vagy az anonim proxyk és remailerek.
+                    </p>
+
+                    <br>
+                    <br>
+
+                    <h3>
+                        Folytassuk a protokollokkal (TCP/IP).
+                    </h3>
+
+                    <p>
+                        A <b>TCP/IP</b> család <b>két legfontosabb</b> <b>transzport protokollja</b> a <b>TCP</b> és az <b>UDP</b>. Ezek, bár a hálózati IP fölött mûködnek, mégsem egyértelmûen feleltethetôk meg az OSI modell 4. rétegének. Inkább úgy fogalmazhatunk,
+                        hogy a TCP-IP és UDP-IP együtt alkotja a 4. szintet vagy a 3-4. szintet együtt. A TCP (Transmission Control Protocol) egy kapcsolatorientált, byte-stream jellegû, megbízható protokoll. A kommunikáció megkezdése elôtt ki kell építeni
+                        a kapcsolatot, majd megkezdhetjük az adatátvitelt. Hiba (elveszett vagy hibás csomag) esetén a TCP réteg maga kér újraadást, elfedve ezzel az IP szint megbízhatatlanságát. A TCP processz egy több mint 20 állapotos állapotgép, meglehetôsen
+                        bonyolult, hiszen az IP szint számos hibát képes produkálni. Az adat, amit átküldhetünk egy byte-folyam, amit a TCP csomagokra vág és elküld. A kapcsolat full-duplex és rendelkezik egy sebességszinkronizációs mechanizmussal, ami
+                        megakadályozza, hogy az adó elárassza a vevôt. A TCP ezen felül figyeli a kapcsolatot és megpróbálja megtippelni az effektív sávszélességet (torlódásokból, válaszidôbôl, ICMP üzenetekbôl, stb.), amit szintén felhasznál a kimenô
+                        adatsebesség beállításakor. Annak érdekében, hogy egy állomás egyszerre több élô TCP kapcsolattal rendelkezhessen, az TCP adatot hordozó IP csomagokban nemcsak a cél-címet kell megadni, hanem az úgynevezett TCP portot is. Ez a
+                        16 bites szám azonosítja a célállomáson belül megszólítandó kommunikációs partnert. A 0 és 1023 közötti portszámok foglaltak, ezeken találhatóak az ismert szolgáltatások (well-known-services), e fölött szabadon használhatóak a
+                        port-számok. Például a HTTP processz hallgatja a 80-as TCP portot, a bejövô kérelmet feldolgozza és válaszol (például küldi a WWW oldalt). Aki tehát egy állomás HTTP processzével kíván kommunikálni, az a 80-as TCP portot szólítsa
+                        meg. Minden TCP által elôállított IP csomagban a TCP protokollazonosítója található, így az állomás az IP csomag vételekor az információt el tudja juttatni a TCP feldolgozóba. Ott a TCP fejlécbôl kiolvasva, a megfelelô portot hallgató
+                        processzhez juttathatjuk el az információt. Az UDP (User Datagram Protocol) egy összeköttetésmentes protokoll. Az UDP információját egy IP csomagba helyezi, ellenôrzô összeget számol hozzá és feladja. Így a kézbesítést nem garantálja,
+                        de a hibás kézbesítést észlelhetôvé teszi. Olyan kérdés-válasz jellegû szolgáltatásokhoz használatos, ahol ha a kérdés vagy a válasz elvész, a hiba egyszerû újrakérdezéssel megoldható. Az, ugyanis, hogy egy csomag elvész, ritka
+                        esemény és ilyen kérdés-válasz esetén könnyen felderíthetô. Az UDP egyszerûsége miatt sokkal kíméletesebben bánik a hálózati erôforrásokkal, mint a TCP. (Egy TCP kapcsolat kiépülése minimum 3 IP csomagba kerül, mielôtt még akár
+                        1 byte-nyi felhasználói adatot átvittünk volna.) A TCP-hez hasonlóan az UDP is rendelkezik portokkal, melyek számkiosztása független a TCP portokétól. Példának okáért a BOOTP (Bootstrap Protocol, a késôbbiekben még szó lesz róla)
+                        a 67-es UDP portot használja.
+
+                    </p>
+
+                </font>
+            </font>
+        </font>
+    </font>
+
+    <!--CONTENT END-->
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <footer>
+
+        <center>
+
+            <font style="color: aliceblue;">
+
+                <p>
+                    <u><i><b>Zenegép:</b></i></u>
+                </p>
+
+                <p>
+                    <b>HUGEL feat. Amber van Day - WTF</b>
+                </p>
+
+            </font>
+
+            <audio controls>
+                        <source src="music_assets/audio_ogg/hugel_wtf.ogg" type="audio/ogg">
+                        <source src="music_assets/audio/HUGEL feat. Amber van Day - WTF (Official Video).mp3" type="audio/mpeg">
+                        </audio>
+
+        </center>
+
+    </footer>
+
+</body>
+
+</html>
